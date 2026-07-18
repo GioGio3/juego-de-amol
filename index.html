@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>¿Qué tanto conocés nuestra historia? ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="contenedor">
+
+
+<!-- INICIO -->
+
+<div id="inicio" class="pantalla">
+
+<h1>❤️ ¿Qué tanto conocés nuestra historia? ❤️</h1>
+
+<p>Hola, Xiomarita ❤️</p>
+
+<p>
+Preparé un pequeño juego para vos.
+Quiero ver cuánto recordás de nuestra historia.
+</p>
+
+<p>
+Son 10 preguntas...
+pero al final hay una sorpresa muy especial.
+</p>
+
+
+<button onclick="empezar()">
+Empezar ❤️
+</button>
+
+</div>
+
+
+
+
+<!-- PREGUNTA 1 -->
+
+<div id="pregunta1" class="pantalla oculto">
+
+<h2>💖 Pregunta 1</h2>
+
+<p>
+¿Cuál fue el primer apodo cariñoso que me escuchaste decirte?
+</p>
+
+<button onclick="siguiente(2)">
+Xiomarita ❤️
+</button>
+
+<button onclick="incorrecto()">
+Mi amol
+</button>
+
+</div>
+
+
+
+
+
+<!-- PREGUNTA 2 -->
+
+<div id="pregunta2" class="pantalla oculto">
+
+<h2>🌹 Pregunta 2</h2>
+
+<p>
+¿Quién dio el primer beso?
+</p>
+
+<button onclick="incorrecto()">
+Franco
+</button>
+
+<button onclick="siguiente(3)">
+Xiomara ❤️
+</button>
+
+</div>
+
+
+
+
+
+<!-- PREGUNTA 3 -->
+
+<div id="pregunta3" class="pantalla oculto">
+
+<h2>💞 Pregunta 3</h2>
+
+<p>
+¿Cuánto tiempo llevamos juntos?
+</p>
+
+<button onclick="incorrecto()">
+9 meses
+</button>
+
+<button onclick="siguiente(4)">
+12 meses ❤️
+</button>
+
+</div>
+
+
+
+
+
+<!-- PREGUNTA 4 -->
+
+<div id="pregunta4" class="pantalla oculto">
+
+<h2>🌹 Pregunta 4</h2>
+
+<p>
+¿Qué es algo que más amo de vos?
+</p>
+
+<button onclick="siguiente(5)">
+Cada parte de ti ❤️
+</button>
+
+<button onclick="incorrecto()">
+Tu sonrisa
+</button>
+
+</div>
+
+
+
+
+
+<!-- PREGUNTA 5 -->
+
+<div id="pregunta5" class="pantalla oculto">
+
+<h2>💖 Pregunta 5</h2>
+
+<p>
+¿Qué siento cuando estoy con vos?
+</p>
+
+<button onclick="siguiente(6)">
+Que estoy con la persona que amo ❤️
+</button>
+
+<button onclick="incorrecto()">
+Que es un momento cualquiera
+</button>
+
+</div>
+
+
+
+
+
+<!-- PREGUNTA 6 -->
+
+<div id="pregunta6" class="pantalla oculto">
+
+<h2>💘 Pregunta 6</h2>
+
+<p>
+¿Qué apodo uso para llamarte con cariño?
+</p>
+
+<button onclick="siguiente(7)">
+Princesa ❤️
+</button>
+
+<button onclick="incorrecto()">
+Xiomarita
+</button>
+
+</div>
+
+
+
+
+
+<!-- PREGUNTA 7 -->
+
+<div id="pregunta7" class="pantalla oculto">
+
+<h2>🌹 Pregunta 7</h2>
+
+<p>
+¿Qué es lo que más quiero construir contigo?
+</p>
+
+<button onclick="incorrecto()">
+Nada importante
+</button>
+
+<button onclick="siguiente(8)">
+Una historia juntos ❤️
+</button>
+
+</div>
+
+
+
+
+
+<!-- PREGUNTA 8 -->
+
+<div id="pregunta8" class="pantalla oculto">
+
+<h2>💞 Pregunta 8</h2>
+
+<p>
+¿Qué representa Xiomara para mí?
+</p>
+
+<button onclick="siguiente(9)">
+El amor de mi vida ❤️
+</button>
+
+<button onclick="incorrecto()">
+Una persona más
+</button>
+
+</div>
+
+
+
+
+
+<!-- PREGUNTA 9 -->
+
+<div id="pregunta9" class="pantalla oculto">
+
+<h2>❤️ Pregunta 9</h2>
+
+<p>
+¿Qué nunca quiero perder?
+</p>
+
+<button onclick="siguiente(10)">
+Lo nuestro ❤️
+</button>
+
+<button onclick="incorrecto()">
+Las discusiones
+</button>
+
+</div>
+
+
+
+
+
+<!-- PREGUNTA 10 -->
+
+<div id="pregunta10" class="pantalla oculto">
+
+<h2>💖 Pregunta 10</h2>
+
+<p>
+¿Cuánto amo a Xiomara?
+</p>
+
+<button onclick="incorrecto()">
+Poco
+</button>
+
+<button onclick="final()">
+Más de lo que puedo explicar ❤️
+</button>
+
+</div>
+
+
+
+
+
+<!-- FINAL -->
+
+<div id="final" class="pantalla oculto">
+
+
+<h1>
+❤️ Felicidades amor ❤️
+</h1>
+
+
+<h2 id="resultado"></h2>
+
+
+<img src="xiomarita.jpg" class="foto">
+
+
+<p>
+Felicidades amor, ganaste el juego ❤️
+</p>
+
+
+<p>
+Siempre me ayudas en todo y me amas casi tanto como yo te amo.
+</p>
+
+
+<p>
+Gracias por estar conmigo y por formar parte de mi vida.
+</p>
+
+
+<h2>
+Pero queda una última pregunta...
+</h2>
+
+
+<div class="caja-anillo">
+
+💍
+
+</div>
+
+
+<h1 class="pregunta-anillo">
+¿Aceptarías este anillo? ❤️
+</h1>
+
+
+<button class="boton-anillo" onclick="aceptar()">
+
+Sí, acepto ❤️
+
+</button>
+
+
+</div>
+
+
+
+
+
+<!-- ACEPTADO -->
+
+<div id="aceptado" class="pantalla oculto">
+
+
+<h1>
+💍❤️
+</h1>
+
+
+<h2>
+Sabía que dirías que sí, Xiomarita ❤️
+</h2>
+
+
+<p>
+Gracias por elegirme y por compartir esta historia conmigo.
+</p>
+
+
+<p>
+Voy a seguir cuidando cada momento que vivimos juntos.
+</p>
+
+
+<h1>
+Te amo muchísimo ❤️
+</h1>
+
+
+</div>
+
+
+
+</div>
+
+
+
+<audio id="musica" loop>
+
+<source src="musica/cancion.mp3" type="audio/mpeg">
+
+</audio>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
